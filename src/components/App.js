@@ -17,9 +17,10 @@ const App = () => {
         console.log(res);
         console.log(res.weather[0]);
         setData(res);
+        setSearch("")
       })
       .catch((error) => {
-        console.log(error)
+        console.log(error.message)
       })
     }, 1000)
 
